@@ -60,11 +60,6 @@ body {
   text-align: center;
 }
 
-.four img {
-  max-width: 100%;
-  height: auto;
-}
-
 .five {
   float: right;
   width: 20%;
@@ -74,6 +69,12 @@ body {
   font-size: 10px;
   height: 400px;
   margin-left: -20%;
+  display: none; /* Hide the fifth section */
+}
+
+.four img {
+  max-width: 100%;
+  height: auto;
 }
 
 .six {
