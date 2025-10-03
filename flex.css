@@ -1,18 +1,21 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 body {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
   font-family: Arial, sans-serif;
-  min-width: 320px;
-  font-size: 10px;
-  height: 100vh;
+  min-height: 100vh;
   gap: 3px;
   padding: 3px;
+  background-color: #f0f0f0;
+  font-size: 10px;
 }
 
+/* Header */
 .header {
   flex: 1 1 100%;
   display: flex;
@@ -20,7 +23,7 @@ body {
   padding: 2px 5px;
   background: #cfe2f3;
   border: 1px solid black;
-  font-size: 12px;
+  min-height: 30px;
 }
 
 .x {
@@ -33,29 +36,35 @@ body {
   flex-shrink: 0;
 }
 
+/* Ліва колонка */
 .two {
   flex: 1 1 20%;
   background: #d9ead3;
   border: 1px solid black;
   padding: 2px 5px;
-  overflow-y: auto;
-  font-size: 10px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Центральна колонка */
 .three {
   flex: 1 1 40%;
   background: #ffffff;
   border: 1px solid black;
   padding: 2px 5px;
-  overflow-y: auto;
-  font-size: 10px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Колонка з зображенням */
 .four {
   flex: 1 1 20%;
   background: #d9ead3;
   border: 1px solid black;
   padding: 2px 5px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,30 +74,31 @@ body {
 .four img {
   max-width: 100%;
   height: auto;
+  border: 1px solid #000;
 }
 
+/* Права колонка */
 .five {
   flex: 1 1 20%;
   background: #fce5cd;
   border: 1px solid black;
   padding: 2px 5px;
-  font-size: 10px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
+/* Футер */
 .six {
   flex: 1 1 100%;
   background: #cfe2f3;
   border: 1px solid black;
   padding: 0;
-  font-size: 10px;
-  position: relative;
   min-height: 120px;
   display: flex;
   align-items: center;
-  padding-left: 5px;
+  position: relative;
+  padding-left: 40px;
 }
 
 .six .y {
@@ -97,15 +107,93 @@ body {
   border: 1px solid black;
   font-weight: bold;
   font-size: 20px;
-  margin: 0;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
 }
 
-h1, h2, h3 { font-size: 1.2em; margin-bottom: 3px; }
-p { margin-bottom: 3px; }
-ul, ol { padding-left: 15px; margin: 5px 0; }
-table { border-collapse: collapse; width: 100%; }
-th, td { border: 1px solid black; padding: 2px; text-align: left; }
+/* Типографіка */
+h1 {
+  font-size: 1.4em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+
+ul, ol {
+  padding-left: 15px;
+  margin: 5px 0;
+}
+
+li {
+  margin-bottom: 2px;
+  line-height: 1.3;
+}
+
+/* Таблиця */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 5px 0;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 3px 5px;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+th {
+  background-color: #e6e6e6;
+}
+
+/* Блоки з номерами */
+.number-block {
+  background: white;
+  border: 1px solid black;
+  padding: 3px 5px;
+  margin: 2px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Вертикальний текст */
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Контейнери для контенту */
+.content-block {
+  margin-bottom: 10px;
+}
+
+.section-title {
+  background: #e6e6e6;
+  padding: 2px 5px;
+  border: 1px solid #000;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
