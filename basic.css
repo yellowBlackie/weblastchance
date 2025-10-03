@@ -41,7 +41,7 @@ body {
 
 .three {
   float: left;
-  width: 40%;
+  width: 60%;
   background: #ffffff;
   border: 1px solid black;
   padding: 2px 5px;
@@ -66,13 +66,14 @@ body {
 }
 
 .five {
-  float: left;
+  float: right;
   width: 20%;
   background: #fce5cd;
   border: 1px solid black;
   padding: 2px 5px;
   font-size: 10px;
   height: 400px;
+  margin-left: -20%;
 }
 
 .six {
