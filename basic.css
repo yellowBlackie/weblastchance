@@ -17,6 +17,7 @@ body {
   padding: 2px 5px;
   overflow: hidden;
   font-size: 12px;
+  margin-bottom: 5px;
 }
 
 .x {
@@ -27,6 +28,12 @@ body {
   font-weight: bold;
   font-size: 20px;
   margin-right: 5px;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 5px;
 }
 
 .two {
@@ -48,11 +55,13 @@ body {
   font-size: 10px;
   overflow-y: auto;
   height: 400px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .four {
   float: left;
-  width: 20%;
+  width: calc(20% - 10px);
   background: #d9ead3;
   border: 1px solid black;
   padding: 2px 5px;
@@ -61,15 +70,7 @@ body {
 }
 
 .five {
-  float: right;
-  width: 20%;
-  background: #fce5cd;
-  border: 1px solid black;
-  padding: 2px 5px;
-  font-size: 10px;
-  height: 400px;
-  margin-left: -20%;
-  display: none; /* Hide the fifth section */
+  display: none;
 }
 
 .four img {
@@ -100,8 +101,36 @@ body {
   z-index: 1;
 }
 
-h1, h2, h3 { font-size: 1.2em; margin-bottom: 3px; }
-p { margin-bottom: 3px; }
-ul, ol { padding-left: 15px; margin: 5px 0; }
-table { border-collapse: collapse; width: 100%; }
-th, td { border: 1px solid black; padding: 2px; text-align: left; }
+h1, h2, h3 { 
+  font-size: 1.2em; 
+  margin-bottom: 3px; 
+}
+p { 
+  margin-bottom: 3px; 
+}
+ul, ol { 
+  padding-left: 15px; 
+  margin: 5px 0; 
+}
+table { 
+  border-collapse: collapse; 
+  width: 100%; 
+}
+th, td { 
+  border: 1px solid black; 
+  padding: 2px; 
+  text-align: left; 
+}
+
+.checkbox-list {
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+.checkbox-list li {
+  margin-bottom: 3px;
+}
+
+.checkbox-list input[type="checkbox"] {
+  margin-right: 5px;
+}
